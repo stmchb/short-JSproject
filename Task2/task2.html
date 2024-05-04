@@ -1,0 +1,66 @@
+<!-- Instagram Like popup button on the Pic after Clicking on the image -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task2</title>
+
+  <style>
+    html,body {
+      height: 100%;
+      width: 100%;
+    }
+
+    body {
+      background-color: lightblue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+    }
+
+    #container {
+      background-color: rgb(231, 219, 219);
+      height: 400px;
+      width: 350px;
+      border-radius: 15px;
+      position: relative;
+      overflow: hidden;
+     
+    }
+
+    #container img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+
+    }
+
+    #container i {
+      color: white;
+      font-size:55px;
+      position:absolute;
+      top: 50%;
+      bottom: 50%;
+      transform: translate(-350%, -50%) scale(1);
+      opacity: 0;
+      transition: transform ease 0.5s;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="container">
+    <img src="image-task2.avif" alt="img">
+    <i class="ri-heart-3-fill"></i>
+  </div>
+  <script src="task2.js"></script>
+</body>
+</html>
