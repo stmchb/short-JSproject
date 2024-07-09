@@ -1,0 +1,27 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-left: 32px;
+  background-color: rgb(3, 3, 3);
+  color: white;
+  position: absolute;
+}
+
+h1 span {
+  color: brown;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  position: relative
+}
+
+span::after {
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 55px;
+  background-color: brown;
+  margin-left: 4px;
+}

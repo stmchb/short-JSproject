@@ -1,0 +1,33 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+
+
+.container {
+  border: 1px solid black;
+  height: 40vh;
+  width: 50vh;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  transition: all 0.4s ease;
+  border: 1px solid #3333;
+  border-radius: 3px;
+}
+
+input {
+  margin-top: 300px;
+  margin-right: 10px;
+  height: 6vh;
+  border: none;
+}
+
+button {
+  margin-top: 300x;
+}

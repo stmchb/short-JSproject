@@ -1,0 +1,41 @@
+body {
+  text-align: center;
+  text-decoration: wavy;
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input {
+  margin-top: 10px;
+  width: 80%;
+  font-size: larger;
+}
+
+.case-container {
+  text-align: left;
+  margin-left: 120px;
+  position: relative;
+}
+
+p {
+  background-color: cyan;
+  width: fit-content;
+  margin-top: 26px;
+}
+
+.upper-case {
+  text-align: left;
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: -17px;
+}
+
+.lower-case {
+  text-align: left;
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: -16px;
+}

@@ -1,0 +1,29 @@
+.input-field {
+  text-align: center;
+  margin-top: 20px;
+  font-family: sans-serif;
+  font-size: 20px;
+  height: 30px;
+}
+
+.text {
+  height: 30px;
+}
+
+.todos-items {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.todos-container li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+button {
+  margin-left: 20px;
+}

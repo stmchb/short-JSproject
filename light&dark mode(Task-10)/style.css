@@ -1,0 +1,21 @@
+body {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+body.dark {
+  background-color: rgb(27, 25, 25);
+  color: whitesmoke;
+}
+
+.container {
+  margin-top: 10px;
+  border: 1px solid blue;
+  height: 8rem;
+}
+
+
+.container .dark {
+  background-color: rgb(27, 25, 25);
+  color: whitesmoke;
+}

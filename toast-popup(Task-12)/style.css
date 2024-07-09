@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.container select {
+  padding: 10px;
+  margin: 10px;
+}
+
+input {
+  height: 1.6rem;
+  justify-content: center;
+}
+
+.range-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+
+button {
+  padding: 10px 16px;
+  background-color: #0ff;
+  border: 1px solid grey;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.all-toast-msg {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.all-toast-msg.top {
+  top: 1rem;
+  bottom: auto;
+}
+
+.all-toast-msg.bottom {
+  top: auto;
+  bottom: 1rem;
+}
+
+.all-toast-msg.left {
+  left: 1rem;
+  right: auto;
+}
+
+.all-toast-msg.right {
+  left: auto;
+  right: 1rem;
+}
+
+
+.toast.success {
+  background-color: green;
+  color: rgb(88, 51, 51);
+  width: fit-content;
+  border-radius: 4px;
+  margin: 5px;
+  padding: 5px 10px;
+}
+
+.toast.success::before {
+  content: "✓";
+}
+
+.toast.error {
+  background-color: red;
+  color: black;
+  width: fit-content;
+  border-radius: 4px;
+  margin: 5px;
+  padding: 5px 10px;
+}
+
+.toast.error::before {
+  content: "✗";
+}
+
+
+
+.toast.warning {
+  background-color: rgb(61, 255, 61);
+  color: black;
+  width: fit-content;
+  border-radius: 4px;
+  margin: 5px;
+  padding: 5px 10px;
+}
+
+.toast.warning::before {
+  content: " ⚠";
+}
+
+
+
+.toast.info {
+  background-color: rgb(120, 133, 120);
+  color: black;
+  width: fit-content;
+  border-radius: 4px;
+  margin: 5px;
+  padding: 5px 10px;
+}
+
+.toast.info::before {
+  content: "ⓘ";
+}
+
+span {
+  cursor: pointer;
+  animation: fromRight 0.1s ease-in;
+}
+
+.toast {
+  padding: 0.5em;
+  color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  animation: fromLeft 0.1s ease-in;
+}
+
+.all-toast-msg.right .toast {
+  animation: fromRight 0.1s ease-in;
+}
+
+.toast.go-left {
+  animation: toLeft 0.1s ease-in forwards;
+}
+
+.all-toast-msg.right .toast.go-right {
+  animation: toRight 0.1s ease-in forwards;
+}
+
+@keyframes toLeft {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes fromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes toRight {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
